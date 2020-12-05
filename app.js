@@ -1,7 +1,13 @@
+console.log("Hi there! Follow me on Twitter: @kvncnls. :D");
+
 const shareBtn = document.querySelector(".share");
 const socialMedia = document.querySelector(".social-media");
 const user = document.querySelector(".user");
 const bottom = document.querySelector(".bottom");
+const middle = document.querySelector(".middle");
+const graphic = document.querySelector(".graphic");
+
+const closeMenuArray = [middle, graphic];
 
 shareBtn.addEventListener("click", () => {
   showSocialMedia();
@@ -25,3 +31,12 @@ function hideUser() {
 function shareBtnActive() {
   shareBtn.classList.toggle("active");
 }
+
+closeMenuArray.forEach((item) => {
+  item.addEventListener("click", () => {
+    socialMedia.classList.remove("active");
+    bottom.classList.remove("active");
+    user.classList.remove("hide");
+    shareBtn.classList.remove("active");
+  });
+});

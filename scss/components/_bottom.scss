@@ -108,6 +108,7 @@
         height: 30px;
         width: 30px;
         background-color: $very-dark-grayish-blue;
+        transition: all 50ms ease-in-out;
         transform: rotate(35deg);
         left: 50%;
         bottom: -10px;
