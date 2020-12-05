@@ -10,6 +10,9 @@
     max-width: 414px;
     margin: 0 auto;
     height: 100%;
+    @include _768 {
+      padding-bottom: 12px;
+    }
   }
   .user {
     display: flex;
