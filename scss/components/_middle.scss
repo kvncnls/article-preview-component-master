@@ -5,9 +5,10 @@
   height: 100%;
   width: 100%;
   padding: 42px 32px 22px;
-  color: $very-dark-grayish-blue;
+
   @include _768 {
-    padding-top: 22px;
+    padding-top: 36px;
+    padding-bottom: 0px;
   }
   header {
     max-width: 350px;
@@ -16,6 +17,7 @@
       font-size: 16px;
       line-height: 150%;
       letter-spacing: 0.01em;
+      color: $very-dark-grayish-blue;
       @include _768 {
         font-size: 20px;
         line-height: 140%;
@@ -28,10 +30,11 @@
     font-size: 12px;
     line-height: 170%;
     letter-spacing: 0.05em;
+    color: $desaturated-dark-blue;
     @include _768 {
-      font-size: 13px;
-      line-height: 150%;
-      letter-spacing: 0.018em;
+      font-size: 12px;
+      line-height: 170%;
+      letter-spacing: 0.045em;
     }
   }
 }

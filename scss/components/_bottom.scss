@@ -1,10 +1,13 @@
 .bottom {
   position: relative;
+  bottom: 0;
   height: 64px;
   width: 100%;
   border-radius: 0 0 10px 10px;
   @include _768 {
     border-radius: 0 0 10px 0;
+    padding-top: 8px;
+    height: 88px;
   }
   &__container {
     position: relative;
@@ -37,6 +40,12 @@
       line-height: 170%;
       letter-spacing: 0.055em;
       user-select: none;
+      &__name {
+        color: $very-dark-grayish-blue;
+      }
+      &__date {
+        color: $desaturated-dark-blue;
+      }
     }
   }
   .user.hide {
@@ -89,8 +98,9 @@
       width: 248px;
       padding: 0 36px;
       border-radius: 8px;
-      top: -78px;
+      top: -68px;
       right: -65px;
+      box-shadow: 0px 4px 16px 10px rgba(0, 0, 0, 0.1);
       .pointy {
         position: absolute;
         height: 20px;
