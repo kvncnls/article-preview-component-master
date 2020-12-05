@@ -5,6 +5,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  border-radius: 10px 10px 0 0;
   @include _768 {
     width: 50%;
     height: 100vw;

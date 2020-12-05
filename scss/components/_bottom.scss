@@ -124,6 +124,7 @@
   }
   .action {
     z-index: 1;
+    @include btnReset;
     .share {
       height: 32px;
       width: 32px;

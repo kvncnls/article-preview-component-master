@@ -9,13 +9,16 @@ body {
   background-color: white;
   border-radius: 10px;
   width: calc(100% - 48px);
-  max-width: 732px;
   @include flexCenter;
   flex-direction: column;
+  @include _480 {
+    max-width: 432px;
+  }
   @include _768 {
     flex-direction: row;
     justify-content: space-between;
     max-height: 280px;
+    max-width: 732px;
   }
   .main-section {
     @include flexCenter;
