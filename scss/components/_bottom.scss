@@ -2,6 +2,10 @@
   position: relative;
   height: 64px;
   width: 100%;
+  border-radius: 0 0 10px 10px;
+  @include _768 {
+    border-radius: 0 0 10px 0;
+  }
   &__container {
     position: relative;
     @include row;
@@ -50,8 +54,12 @@
     align-items: center;
     height: 100%;
     background-color: $very-dark-grayish-blue;
+    opacity: 0;
     display: none;
     transition: all 50ms ease-in-out;
+    @include _768 {
+      transition: all 250ms ease-in-out;
+    }
     p {
       font-size: 13px;
       line-height: 100%;
@@ -73,6 +81,7 @@
     }
   }
   .social-media.active {
+    opacity: 1;
     display: flex;
     @include _992 {
       position: absolute;
@@ -81,7 +90,16 @@
       padding: 0 36px;
       border-radius: 8px;
       top: -78px;
-      right: -80px;
+      right: -65px;
+      .pointy {
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        background-color: $very-dark-grayish-blue;
+        transform: rotate(45deg);
+        left: 50%;
+        bottom: -10px;
+      }
     }
   }
   .action {
