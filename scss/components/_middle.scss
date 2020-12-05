@@ -6,6 +6,9 @@
   width: 100%;
   padding: 42px 32px 22px;
   color: $very-dark-grayish-blue;
+  @include _768 {
+    padding-top: 22px;
+  }
   header {
     max-width: 350px;
     margin-bottom: 12px;
