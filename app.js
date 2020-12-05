@@ -7,6 +7,7 @@ shareBtn.addEventListener("click", () => {
   showSocialMedia();
   activeBottom();
   hideUser();
+  shareBtnActive();
 });
 
 function showSocialMedia() {
@@ -19,4 +20,8 @@ function activeBottom() {
 
 function hideUser() {
   user.classList.toggle("hide");
+}
+
+function shareBtnActive() {
+  shareBtn.classList.toggle("active");
 }
