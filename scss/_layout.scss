@@ -21,5 +21,6 @@ body {
   .main-section {
     @include flexCenter;
     flex-direction: column;
+    width: 100%;
   }
 }

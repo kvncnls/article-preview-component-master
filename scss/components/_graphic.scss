@@ -5,9 +5,6 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  @include _600 {
-    background-position: bottom center;
-  }
   @include _768 {
     width: 50%;
     height: 100vw;

@@ -38,6 +38,12 @@
   }
 }
 
+@mixin _460 {
+  @media screen and (min-width: 460px) {
+    @content;
+  }
+}
+
 @mixin _480 {
   @media screen and (min-width: 480px) {
     @content;

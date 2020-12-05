@@ -1,10 +1,16 @@
 .bottom {
   height: 64px;
-  @include row;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 32px;
   width: 100%;
+  &__container {
+    @include row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 32px;
+    width: 100%;
+    max-width: 414px;
+    margin: 0 auto;
+    height: 100%;
+  }
   .user {
     display: flex;
     flex-direction: row;
@@ -32,9 +38,9 @@
     visibility: hidden;
   }
   .social-media {
+    @include row;
     align-items: center;
     height: 100%;
-    width: 100%;
     background-color: $very-dark-grayish-blue;
     display: none;
     transition: all 50ms ease-in-out;
@@ -59,7 +65,7 @@
     }
   }
   .social-media.active {
-    @include row;
+    display: flex;
   }
   .action {
     z-index: 1;
