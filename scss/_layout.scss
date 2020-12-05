@@ -1,0 +1,25 @@
+body {
+  @include flexCenter;
+  flex-direction: column;
+  background-color: $light-grayish-blue;
+}
+
+.container {
+  margin-top: auto;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  width: calc(100% - 48px);
+  max-width: 732px;
+  @include flexCenter;
+  flex-direction: column;
+  @include _768 {
+    flex-direction: row;
+    justify-content: space-between;
+    max-height: 280px;
+  }
+  .main-section {
+    @include flexCenter;
+    flex-direction: column;
+  }
+}

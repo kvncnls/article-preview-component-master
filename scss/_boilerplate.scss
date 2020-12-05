@@ -1,0 +1,38 @@
+/* Global Styles */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  font-family: $main-font;
+  background-color: $secondary-color;
+  color: $main-color;
+  font-size: 10px;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  @include flexCenter;
+  flex-direction: column;
+}
+
+li {
+  list-style-type: none;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  user-select: none;
+  margin-top: auto;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

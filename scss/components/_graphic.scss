@@ -1,0 +1,17 @@
+.graphic {
+  height: 200px;
+  width: 100%;
+  background-image: url(/images/drawers.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  @include _600 {
+    background-position: bottom center;
+  }
+  @include _768 {
+    width: 50%;
+    height: 100vw;
+    max-height: 280px;
+    max-width: 287px;
+  }
+}
