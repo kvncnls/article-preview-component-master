@@ -1,4 +1,4 @@
-console.log("Hi there! Follow me on Twitter: @kvncnls. :D");
+console.log("Hi there! Follow me on Twitter @kvncnls. :D");
 
 const shareBtn = document.querySelector(".share");
 const socialMedia = document.querySelector(".social-media");
